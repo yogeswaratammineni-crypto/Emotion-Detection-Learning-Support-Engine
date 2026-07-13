@@ -1,0 +1,34 @@
+# Secret keys - NEVER upload
+.env
+
+# Python cache - auto generated
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Large model files - share via Google Drive
+models/bert_emotion_model_final/bert_model.pt
+models/bltsm/bilstm_final.keras
+models/bltsm/baseline_bilstm.keras
+
+# Keep these small model files
+!models/bltsm/tokenizer.pkl
+!models/bltsm/label_encoder.pkl
+
+# Data files
+data/GoEmotions/
+data/cleansed_emocontext/
+data/empatheticdialogues/
+data/ISEAR Dataset/
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
